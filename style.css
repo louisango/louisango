@@ -1,4 +1,119 @@
-body{
-    background: gray;
-    color: red;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap');
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+  background:#b68ce08e;
+  color: #044ed981;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+h1,
+h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.link {
+  color: #486df1b0;
+  font-weight: 500;
+  
+}
+
+.link:hover {
+  color: #8005F2;
+}
+
+.box {
+  columns: count;
+}
+
+.box img{
+width: 300px;
+}
+.avatar{
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 2px rgba(0, 106, 255, 0.543);
+}
+
+.products-list{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.card {
+  width: 24%;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 100%;
+   border-radius: 8px; 
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.card .card-info {
+  padding: 24px;
+}
+
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: azure;
+  background-image: url(https://cdn-bjbma.nitrocdn.com/AYzAWgGdgpQyVFALloxSDXIztOjJbwWw/assets/static/optimized/rev-45f7a59/thegaminggenie.com/wp-content/uploads/2020/10/e268b442593d27996246ec8cf7776a51.kda-all-out.jpg);
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 5vw;
+  margin: 0;
+}
+
+.hero h2 {
+  font-size: 2vw;
+  font-weight: 400;
+  margin: 0;
+}
+
+
+.navbar {
+  display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   -ms-flex-align: center;
+}
+
+.img{
+  width: 150px;
+  height: 150px;
+}
+footer{
+  color: rgba(0, 179, 255, 0.986);
+
 }
