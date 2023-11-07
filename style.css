@@ -14,6 +14,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 32px;
+  margin: 0;
 }
 
 h1,
@@ -39,14 +40,15 @@ a {
 
 .box {
   columns: count;
+  margin: 30px;
 }
 
 .box img{
-width: 300px;
+width: 290px;
 }
 .avatar{
   width: 60px;
-  height: 50px;
+  height: 60px;
   border-radius: 50%;
   border: solid 2px rgba(0, 106, 255, 0.543);
 }
@@ -54,23 +56,43 @@ width: 300px;
 .products-list{
   display: flex;
   justify-content: space-around;
-  gap: 10px;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 32px;
+  align-items: center;
 }
 
 .card {
   width: 24%;
-  border-radius: 5px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
 }
 
 .card img {
   width: 100%;
-   border-radius: 8px; 
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
 }
 
+.card h2{
+  margin: 0;
+}
 .card .card-info {
-  padding: 24px;
+  padding: 16px;
+  height: 300px;
+  overflow-y: scroll;
+  scrollbar-color: #b68ce08e  transparent;
+  scrollbar-width: thin;
+}
+
+
+.text-detail{
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+}
+p{
+  color: #271a32;
+  background-color: white;
 }
 
 
@@ -107,13 +129,40 @@ width: 300px;
    align-items: center;
    width: 100%;
    -ms-flex-align: center;
+   background-color: #fdfaff;
+   
 }
 
+.flex-aligned a{
+  margin-right: 15px;
+
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+}
 .img{
   width: 150px;
-  height: 150px;
 }
-footer{
-  color: rgba(0, 179, 255, 0.986);
 
+
+footer{
+  display: flex;
+  justify-content: center;
+width: 100%;
+background-color: rgb(241, 222, 222);
+color: rgba(0, 179, 255, 0.986);
+
+}
+
+
+.social-media{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-media img{
+  width: 20px;
 }
